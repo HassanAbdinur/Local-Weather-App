@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
                 })
                 .then(data => {
                     console.log(data);
-                    const {temperature, } = data.currently;
+                    const { temperature, summary } = data.currently;
             });
         });
     } 
