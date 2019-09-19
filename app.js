@@ -24,6 +24,8 @@ window.addEventListener("load", () => {
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
                     locationTimezone.textContent = data.timezone;
+                        // Set Icons
+                        setIcons(icon, )
             });
         });
     } 
