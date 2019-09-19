@@ -4,6 +4,8 @@ window.addEventListener("load", () => {
     let temperatureDescription = document.querySelector('.temperature-description');
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone'); 
+    let temperatureSection = document.querySelector('.temperature');
+    const temperatureSpan = document.querySelector('.temporature span');
 
     if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition
@@ -24,8 +26,11 @@ window.addEventListener("load", () => {
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
                     locationTimezone.textContent = data.timezone;
-                        // Set Icons
-                        setIcons(icon, document.querySelector(".icon"));
+                    // Set Icons
+                    setIcons(icon, document.querySelector(".icon"));
+
+                    // Change temperature to Celsius/Fareheit
+
             });
         });
     } 
