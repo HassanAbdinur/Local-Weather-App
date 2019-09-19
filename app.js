@@ -26,6 +26,10 @@ window.addEventListener("load", () => {
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
                     locationTimezone.textContent = data.timezone;
+                    // Formula for Celsius
+                    let celsius = (temperature - 32) * (5/9);
+
+
                     // Set Icons
                     setIcons(icon, document.querySelector(".icon"));
 
